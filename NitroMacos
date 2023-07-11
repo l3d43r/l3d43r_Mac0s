@@ -1,0 +1,14 @@
+Chaning those bytes becomes Full
+
+
+                                      +[SOMMPurchaseController isRegistered]:
+0x00000001001276c8 55                     push       rbp                        ; Objective C Implementation defined at 0x100427fc8 (class method), Begin of try block, DATA XREF=0x100427fc8
+0x00000001001276c9 4889E5                 mov        rbp, rsp
+
+
+
+
+
+                                      +[SOMMPurchaseController isRegistered]:
+0x00000001001276c8 B001                   mov        al, 0x1                    ; DATA XREF=0x100427fc8
+0x00000001001276ca C3                     ret
