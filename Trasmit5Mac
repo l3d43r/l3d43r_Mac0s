@@ -1,0 +1,30 @@
+                                      _TRTrialStatus:
+0x000000010001e70c 55                     push       rbp                        ; CODE XREF=-[FavoritesEditor validateMenuItem:]+39, -[TabViewController restoredPaneViewControllerWithDictionary:]+118, -[TabViewController finishRestoringPaneViewController:dictionary:]+127, -[TransmitDelegate application:openFiles:]+1495, -[TransmitDelegate application:openFiles:]+1807, -[TransmitDelegate recordAnalytics]+4948, -[TransmitDelegate validateMenuItem:]+585, -[TransmitDelegate exportFavorites:]+18, -[TransmitDelegate handleURLEvent:withReplyEvent:]+205, -[TRServersViewController restoreStateWithDictionary:]+636, -[TRServersViewController validateSharedAction:title:contextInfo:wasValidated:]+30
+0x000000010001e70d 4889E5                 mov        rbp, rsp
+0x000000010001e710 4157                   push       r15
+0x000000010001e712 4156                   push       r14
+0x000000010001e714 4154                   push       r12
+0x000000010001e716 53                     push       rbx
+0x000000010001e717 4C8B2542D91600         mov        r12, qword [_NSApp_10018c060] ; _NSApp_10018c060
+0x000000010001e71e 498B3C24               mov        rdi, qword [r12]
+0x000000010001e722 4C8B3DB7E61B00         mov        r15, qword [0x1001dcde0]   ; @selector(delegate)
+0x000000010001e729 488B1D90E21600         mov        rbx, qword [_objc_msgSend_10018c9c0] ; _objc_msgSend_10018c9c0
+0x000000010001e730 4C89FE                 mov        rsi, r15
+0x000000010001e733 FFD3                   call       rbx
+
+To 
+
+                                     _TRTrialStatus:
+0x000000010001e70c B80F270000             mov        eax, 0x270f                ; CODE XREF=-[FavoritesEditor validateMenuItem:]+39, -[TabViewController restoredPaneViewControllerWithDictionary:]+118, -[TabViewController finishRestoringPaneViewController:dictionary:]+127, -[TransmitDelegate application:openFiles:]+1495, -[TransmitDelegate application:openFiles:]+1807, -[TransmitDelegate recordAnalytics]+4948, -[TransmitDelegate validateMenuItem:]+585, -[TransmitDelegate exportFavorites:]+18, -[TransmitDelegate handleURLEvent:withReplyEvent:]+205, -[TRServersViewController restoreStateWithDictionary:]+636, -[TRServersViewController validateSharedAction:title:contextInfo:wasValidated:]+30
+0x000000010001e711 C3                     ret
+                        ; endp
+0x000000010001e712 4156                   push       r14
+0x000000010001e714 4154                   push       r12
+0x000000010001e716 53                     push       rbx
+0x000000010001e717 4C8B2542D91600         mov        r12, qword [_NSApp_10018c060] ; _NSApp_10018c060
+0x000000010001e71e 498B3C24               mov        rdi, qword [r12]
+0x000000010001e722 4C8B3DB7E61B00         mov        r15, qword [0x1001dcde0]   ; @selector(delegate)
+0x000000010001e729 488B1D90E21600         mov        rbx, qword [_objc_msgSend_10018c9c0] ; _objc_msgSend_10018c9c0
+0x000000010001e730 4C89FE                 mov        rsi, r15
+0x000000010001e733 FFD3                   call       rbx
+0x000000010001e735 4C8B35C4DB1B00         mov 
