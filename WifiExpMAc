@@ -1,0 +1,29 @@
+
+                                      -[AppDelegate applicationDidFinishLaunching:]:
+0x0000000100029409 55                     push       rbp                        ; Objective C Implementation defined at 0x10015ea98 (instance method), DATA XREF=0x10015ea98
+0x000000010002940a 4889E5                 mov        rbp, rsp
+0x000000010002940d 4157                   push       r15
+0x000000010002940f 4156                   push       r14
+0x0000000100029411 4155                   push       r13
+0x0000000100029413 4154                   push       r12
+0x0000000100029415 53                     push       rbx
+0x0000000100029416 4883EC48               sub        rsp, 0x48
+
+JUST RET
+
+
+and 
+
+
+                                      -[AppDelegate isProductActivated]:
+0x000000010003438b 55                     push       rbp                        ; Objective C Implementation defined at 0x10015f1b8 (instance method), DATA XREF=0x10015f1b8
+0x000000010003438c 4889E5                 mov        rbp, rsp
+0x000000010003438f 4157                   push       r15
+0x0000000100034391 4156                   push       r14
+0x0000000100034393 4155                   push       r13
+0x0000000100034395 4154                   push       r12
+
+to 
+
+mov al ,1 
+ret
