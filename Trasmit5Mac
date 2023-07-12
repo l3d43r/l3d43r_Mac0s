@@ -28,3 +28,45 @@ To
 0x000000010001e730 4C89FE                 mov        rsi, r15
 0x000000010001e733 FFD3                   call       rbx
 0x000000010001e735 4C8B35C4DB1B00         mov 
+
+
+and 
+
+                                      -[TransmitDelegate updatePurcahseMenuWithStatus:]:
+0x000000010002cafb 55                     push       rbp                        ; Objective C Implementation defined at 0x1001b0c40 (instance method), DATA XREF=0x1001b0c40
+0x000000010002cafc 4889E5                 mov        rbp, rsp
+0x000000010002caff 4157                   push       r15
+0x000000010002cb01 4156                   push       r14
+0x000000010002cb03 4155                   push       r13
+0x000000010002cb05 4154                   push       r12
+0x000000010002cb07 53                     push       rbx
+0x000000010002cb08 50                     push       rax
+0x000000010002cb09 4889D3                 mov        rbx, rdx
+0x000000010002cb0c 4989FE                 mov        r14, rdi
+0x000000010002cb0f 4C8B2D4AF51500         mov        r13, qword [_NSApp_10018c060] ; _NSApp_10018c060
+0x000000010002cb16 498B7D00               mov        rdi, qword [r13]
+0x000000010002cb1a 488B35F7201B00         mov        rsi, qword [0x1001dec18]   ; @selector(mainMenu)
+0x000000010002cb21 FF1599FE1500           call       qword [_objc_msgSend_10018c9c0] ; _objc_msgSend, _objc_msgSend_10018c9c0
+0x000000010002cb27 4989C4                 mov        r12, rax
+0x000000010002cb2a 4881FB0F270000         cmp        rbx, 0x270f
+0x000000010002cb31 7405                   je         loc_10002cb38          
+
+to 
+                                      -[TransmitDelegate updatePurcahseMenuWithStatus:]:
+0x000000010002cafb 55                     push       rbp                        ; Objective C Implementation defined at 0x1001b0c40 (instance method), DATA XREF=0x1001b0c40
+0x000000010002cafc 4889E5                 mov        rbp, rsp
+0x000000010002caff 4157                   push       r15
+0x000000010002cb01 4156                   push       r14
+0x000000010002cb03 4155                   push       r13
+0x000000010002cb05 4154                   push       r12
+0x000000010002cb07 53                     push       rbx
+0x000000010002cb08 50                     push       rax
+0x000000010002cb09 4889D3                 mov        rbx, rdx
+0x000000010002cb0c 4989FE                 mov        r14, rdi
+0x000000010002cb0f 4C8B2D4AF51500         mov        r13, qword [_NSApp_10018c060] ; _NSApp_10018c060
+0x000000010002cb16 498B7D00               mov        rdi, qword [r13]
+0x000000010002cb1a 488B35F7201B00         mov        rsi, qword [0x1001dec18]   ; @selector(mainMenu)
+0x000000010002cb21 FF1599FE1500           call       qword [_objc_msgSend_10018c9c0] ; _objc_msgSend, _objc_msgSend_10018c9c0
+0x000000010002cb27 4989C4                 mov        r12, rax
+0x000000010002cb2a 4881FB0F270000         cmp        rbx, 0x270f
+0x000000010002cb31 7405                   jne         loc_10002cb38                         <== change here 
